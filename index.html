@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="icon" href="imgs/pageicon.png">
+    <title>Etch a Sketch</title>
+</head>
+<body>
+    <h1>Etch a Sketch</h1>
+    <div class="main-container">
+        <div class="btn-container">
+            <button class="item" id="btnClear" onclick="clickClear()">Clear</button>
+            <button class="item" id="btnErase" onclick="modifyColor('black')">Erase</button>
+            <button class="item" id="btnGrey" onclick="modifyColor(scaleGrey()),changeProp(scaleGrey())">Range of greys</button>
+            <label>Change color:</label>
+            <input class="item" id="inputColor" type="color" value="#ffffff"> 
+            <label>Change grid size:</label>
+            <input class="item" id="inputNumGrid" type="range" min="2" max="100" value="16" placeholder="value"> 
+        </div>
+        <div class="container"></div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+<footer>
+    <p>
+        Copyright © 
+        <script>
+            document.write(new Date().getFullYear())
+        </script>
+        Iara Criscenti
+    </p>
+    <a href="https://github.com/iaracriscenti" target="_blank"> <img src="imgs/githubicon.png" alt="github user"></a>    
+</footer>
+</html>
